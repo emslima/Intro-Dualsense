@@ -141,7 +141,7 @@
     .controller{
         position: relative;
         height: 550px;
-        background-image: url(/IMG//dualsense.webp);
+        background-image: url(/Intro-Dualsense/IMG//dualsense.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -184,7 +184,7 @@
     #astroSexy{ /* 🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖 */
         width: 100%;
         height: 210px;
-        background-image: url(/IMG/sexyastro.png);
+        background-image: url(/Intro-Dualsense/IMG/sexyastro.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 500px;
@@ -304,7 +304,7 @@
         height: 400px;
         width: 100%;
         margin-top: -70px;
-        background-image: url(/IMG/birdblue.png);
+        background-image: url(/Intro-Dualsense/IMG/birdblue.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 1900px;
@@ -423,19 +423,19 @@
         transition: .8s ease;
     }
     #dawn{
-        background-image: url(/IMG/greatgames/dawn.jpg);
+        background-image: url(/Intro-Dualsense/IMG/greatgames/dawn.jpg);
     }
     #ghost{
-        background-image: url(/IMG/greatgames/ghost.png);
+        background-image: url(/Intro-Dualsense/IMG/greatgames/ghost.png);
     }
     #spider{
-        background-image: url(/IMG/greatgames/spider.png);
+        background-image: url(/Intro-Dualsense/IMG/greatgames/spider.png);
     }
     #ellie{
-        background-image: url(/IMG/greatgames/ellie.jpg);
+        background-image: url(/Intro-Dualsense/IMG/greatgames/ellie.jpg);
     }
     #death{
-        background-image: url(/IMG/greatgames/deathblue.png);
+        background-image: url(/Intro-Dualsense/IMG/greatgames/deathblue.png);
     }
     .gamesBlocks:hover:nth-child(1){
         opacity: 1;
@@ -536,7 +536,7 @@
     .preOrders{
         height: 650px;
         width: 100%;
-        background-image: url(/IMG/astroVR.png);
+        background-image: url(/Intro-Dualsense/IMG/astroVR.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 600px;
