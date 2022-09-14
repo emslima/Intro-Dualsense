@@ -129,7 +129,7 @@
 
     .firstPage{ /* 🟥 */
         margin: auto;
-        width: 900px;
+        width: 800px;
         height: 100vh;
         margin-top: 110px;
         margin-bottom: 50px;
@@ -167,7 +167,7 @@
     .secondPage{  /* 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 900px;
+        width: 800px;
         height: 65vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
