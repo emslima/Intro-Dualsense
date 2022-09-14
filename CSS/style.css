@@ -129,7 +129,7 @@
 
     .firstPage{ /* 🟥 */
         margin: auto;
-        width: 800px;
+        width: 900px;
         height: 100vh;
         margin-top: 110px;
         margin-bottom: 50px;
@@ -167,7 +167,7 @@
     .secondPage{  /* 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 800px;
+        width: 900px;
         height: 65vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
@@ -195,7 +195,7 @@
     .thirdPage{/* 🟥 🟥 🟥 */
         display: flex;
         flex-direction: column;
-        width: 800px;
+        width: 900px;
         height: 100vh;
         color: var(--text-base);
         margin: auto;
@@ -313,7 +313,7 @@
     .fourthPage{ /* 🟥 🟥 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 800px;
+        width: 900px;
         height: 96vh;
         color: var(--text-base);
         display: flex;
