@@ -76,7 +76,7 @@
         margin: 0%;
         overflow-x: hidden;
         background-color: var(--background);
-        font-family: -apple-system, SF Pro Display Regular, , Helvetica, Arial, sans-serif;
+        font-family: -apple-system, SF Pro Display Regular, Helvetica, 'Segoe UI', Arial, sans-serif;
     }
     nav{
         display: flex;
