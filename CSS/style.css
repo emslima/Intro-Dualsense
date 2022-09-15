@@ -900,7 +900,7 @@
     .firstPage{ /* 🟥 */
         margin: auto;
         width: 95%;
-        height: 110vh;
+        height: 120vh;
         margin-top: 70px;
         margin-bottom: 50px;
         text-align: center;
@@ -920,7 +920,7 @@
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 90vh;
+        height: 100vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
@@ -929,7 +929,7 @@
         display: flex;
         flex-direction: column;
         width: 95%;
-        height: 120vh;
+        height: 130vh;
         color: var(--text-base);
         margin: auto;
         margin-top: 50px;
@@ -941,7 +941,7 @@
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 140vh;
+        height: 150vh;
         color: var(--text-base);
         display: flex;
         flex-direction: column;
@@ -1051,7 +1051,7 @@
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 60vh;
+        height: 70vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
@@ -1082,7 +1082,7 @@
         margin: auto;
         text-align: center;
         width: 85%;
-        height: 120vh;
+        height: 130vh;
         color: var(--text-base);
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
@@ -1104,7 +1104,7 @@
     }
     footer{ /*👣👣👣👣👣👣 */
         width: 98%;
-        height: 100vh;
+        height: 110vh;
         margin: auto;
         color: var(--superwhite);
         margin-bottom: 20px;
