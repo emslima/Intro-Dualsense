@@ -883,8 +883,8 @@
         grid-auto-rows: 200px;
     }
   }
-  /* ------------Responsive rules MOBILE ---------------*/
-  @media only screen and (max-width: 700px){
+  /* ------------Responsive rules MOBILE 📱📱📱📱📱📱📱*/
+  @media only screen and (max-width: 400px){
     body{
         margin: 0%;
         width: 100vw;
@@ -893,14 +893,14 @@
         font-family: 'Inter', sans-serif;
         font-family: 'Open Sans', sans-serif;
         font-family: 'SF Pro Display Regular', sans-serif, SF Pro Display Regular, Helvetica,'Open Sans', sans-serif, Verdana, Arial, Helvetica, sans-serif, Arial, sans-serif;
+        background-color: #4e4e4e43;
     }
     header{
         display: none;
     }
     .firstPage{ /* 🟥 */
         margin: auto;
-        width: 100vw;
-        width: 130vw;
+        width: 100%;
         margin-top: 70px;
         margin-bottom: 50px;
         text-align: center;
@@ -911,7 +911,7 @@
     .secondPage{  /* 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 110vw;
+        width: 90%;
         height: 90vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
@@ -920,7 +920,7 @@
     .thirdPage{/* 🟥 🟥 🟥 */
         display: flex;
         flex-direction: column;
-        width: 120vw;
+        width: 80%;
         height: 120vh;
         color: var(--text-base);
         margin: auto;
@@ -932,7 +932,7 @@
     .fourthPage{ /* 🟥 🟥 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 130vw;
+        width: 70%;
         height: 140vh;
         color: var(--text-base);
         display: flex;
@@ -975,6 +975,7 @@
     .blockOne, .blockTwo{
         display: flex;
         flex-direction: column;
+        width: 100px;
     }
     .blockOne p{
         line-height: 22px;
@@ -1031,5 +1032,8 @@
         border-radius: 16px;
         margin-top: 50px;
         padding: 20px;
+    }
+    footer{
+        display: none;
     }
   } 
