@@ -884,6 +884,152 @@
     }
   }
   /* ------------Responsive rules MOBILE ---------------*/
-  @media only screen and (max-width: 900px){
-    
+  @media only screen and (max-width: 700px){
+    body{
+        margin: 0%;
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: var(--background);
+        font-family: 'Inter', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'SF Pro Display Regular', sans-serif, SF Pro Display Regular, Helvetica,'Open Sans', sans-serif, Verdana, Arial, Helvetica, sans-serif, Arial, sans-serif;
+    }
+    header{
+        display: none;
+    }
+    .firstPage{ /* 🟥 */
+        margin: auto;
+        width: 100vw;
+        height: 120vh;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        text-align: center;
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+        border-radius: 16px;
+    }
+    .secondPage{  /* 🟥 🟥 */
+        margin: auto;
+        text-align: center;
+        width: 95%;
+        height: 90vh;
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 #8989892f;
+        border-radius: 16px;
+    }
+    .thirdPage{/* 🟥 🟥 🟥 */
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 120vh;
+        color: var(--text-base);
+        margin: auto;
+        margin-top: 50px;
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 #8989892f;
+        border-radius: 16px;
+    }
+    .fourthPage{ /* 🟥 🟥 🟥 🟥 */
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 140vh;
+        color: var(--text-base);
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        border: var(--key-gradient2) solid 1px;
+        margin-top: 50px;
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+        border-radius: 16px;
+        margin-bottom: 50px;
+    }
+    .fourthPage h1{
+        font-size: clamp(2rem, 2.5vw, 5rem);
+    }
+    .blueTittle{
+        display: flex;
+        font-size: clamp(2rem, 2.5vw, 4rem);
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 2%;
+        text-align: start;
+        background: var(--blue-gradient1);
+        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .newContentFour{
+        padding: 20px;
+    }
+    .fourthPage h1{
+        padding: 0%;
+        margin: 0px;
+    }
+    .fourthPage P{
+        padding: 1%;
+        margin: 0%;
+        text-align: start;
+    }
+    .blockOne, .blockTwo{
+        display: flex;
+        flex-direction: column;
+    }
+    .blockOne p{
+        line-height: 22px;
+    }
+    .blockTwo p{
+        line-height: 22px;
+    }
+    .blocks{
+        padding: 1.7%;
+        border-radius: 30px;
+        margin-top: 23px;
+        width: 100%;
+        background: var(--gray);
+        backdrop-filter: blur( 15px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.098);
+        margin: 5px;
+    }
+    #haptic, #trigger, #micro, #create{
+        padding: 1.7%;
+        border-radius: 30px;
+        margin-top: 23px;
+        width: 100%;
+        background: var(--gray);
+        backdrop-filter: blur( 15px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.098);
+        margin: 5px;
+    }
+    .fifthPage{ /* 🟥 🟥 🟥 🟥 🟥 */
+        color: var(--text-base);
+        margin: auto;
+        text-align: center;
+        width: 98%;
+        height: 100vh;
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+        border-radius: 16px;
+    }
+    .blackTittle{
+        font-size: clamp(2rem, 2.5vw, 4rem);
+    }
+    .sixthPage{ /* 🟥 🟥 🟥 🟥 🟥 🟥 */
+        color: var(--text-base);
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        height: 120vh;
+        color: var(--text-base);
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+        border-radius: 16px;
+        margin-top: 50px;
+        padding: 20px;
+    }
   } 
