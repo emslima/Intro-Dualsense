@@ -900,7 +900,8 @@
     }
     .firstPage{ /* 🟥 */
         margin: auto;
-        width: 100%;
+        width: 95%;
+        height: 110vh;
         margin-top: 70px;
         margin-bottom: 50px;
         text-align: center;
@@ -908,10 +909,18 @@
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
     }
+    .contentText{
+        font-size: clamp(1.2rem, 2.5vw, 1rem);
+        text-align: center;
+        margin: 0px 140px 0px 140px;
+        width: 80%;
+        margin: auto;
+        line-height: 32px;
+    }
     .secondPage{  /* 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 90%;
+        width: 95%;
         height: 90vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
@@ -920,7 +929,7 @@
     .thirdPage{/* 🟥 🟥 🟥 */
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 95%;
         height: 120vh;
         color: var(--text-base);
         margin: auto;
@@ -932,7 +941,7 @@
     .fourthPage{ /* 🟥 🟥 🟥 🟥 */
         margin: auto;
         text-align: center;
-        width: 70%;
+        width: 95%;
         height: 140vh;
         color: var(--text-base);
         display: flex;
@@ -975,7 +984,7 @@
     .blockOne, .blockTwo{
         display: flex;
         flex-direction: column;
-        width: 100px;
+        width: 94%;
     }
     .blockOne p{
         line-height: 22px;
@@ -1011,11 +1020,29 @@
         color: var(--text-base);
         margin: auto;
         text-align: center;
-        width: 98%;
-        height: 100vh;
+        width: 95%;
+        height: 60vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
+    }
+    .greatGamesGroup{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .gamesBlocks{
+        width: 20%;
+        height: 40vh;
+        margin: 10px;
+        border-radius: 12px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1rem;
+        box-shadow: #454545 10px;
+        transition: .8s ease;
     }
     .blackTittle{
         font-size: clamp(2rem, 2.5vw, 4rem);
