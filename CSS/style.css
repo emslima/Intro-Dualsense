@@ -941,7 +941,7 @@
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 150vh;
+        height: 160vh;
         color: var(--text-base);
         display: flex;
         flex-direction: column;
@@ -1082,7 +1082,7 @@
         margin: auto;
         text-align: center;
         width: 85%;
-        height: 130vh;
+        height: 140vh;
         color: var(--text-base);
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
