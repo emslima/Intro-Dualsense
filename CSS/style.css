@@ -1,703 +1,800 @@
 :root {
-        @font-face { /*Apple Fonts ----------------------------- */
-            font-family: 'SF Pro Display';
-            font-style: normal;
-            font-weight: 400;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff') format('woff');
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap');
-
-        @font-face {
-            font-family: 'Inter', sans-serif;
-            font-family: 'Open Sans', sans-serif;
-        }
-        @font-face {
-            font-family:'Inter', sans-serif;;
-            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap');
-        }
-
-        @font-face {
-            font-family: SFMono-Regular;
-            src: local("SFMono-Regular");
-          }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: italic;
-            font-weight: 100;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: italic;
-            font-weight: 200;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: italic;
-            font-weight: 300;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: normal;
-            font-weight: 500;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: italic;
-            font-weight: 600;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: normal;
-            font-weight: 700;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: italic;
-            font-weight: 800;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff') format('woff');
-        }
-        @font-face {
-            font-family: 'SF Pro Display';
-            font-style: italic;
-            font-weight: 900;
-            src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff') format('woff');
-        }
+    @font-face {
+        /*Apple Fonts ----------------------------- */
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff') format('woff');
     }
-    :root{
-        --background: #F7F8F9;
-        --text-base: #212529;
-        --text-base-blur: #eebfff32;
-        --blue-gradient1: #003895;
-        --blue-gradient2: #007fea;
-        --key-gradient2: #344a5a00;
-        --gray: #DCE3E9 ;
-        --white: #F7F8F9;
-        --black: #454545;
-        --superwhite: #FFFFFF;
-        --superblack: #212529;
-        --whitecard: #e7e7e7;
-        --shadow: #8989892f;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        margin: 0%;
-        overflow-x: hidden;
-        background-color: var(--background);
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap');
+
+    @font-face {
         font-family: 'Inter', sans-serif;
         font-family: 'Open Sans', sans-serif;
-        font-family: 'SF Pro Display Regular', sans-serif, SF Pro Display Regular, Helvetica,'Open Sans', sans-serif, Verdana, Arial, Helvetica, sans-serif, Arial, sans-serif;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 5px;
-        margin: auto;
-        text-align: center;
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 0px 20px 0 #50505013;
-        backdrop-filter: blur( 10px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 16px;
-        border: 1px solid rgba(102, 102, 102, 0.085);
-        width: 70%;
-        margin-top: 5px;
-        
-    }
-    .logos{
-        height: 30px;
-        padding-left: 10px;
     }
 
-    a {
-        text-decoration: none;
-        color: var(--black);
-        font-size: 1.2rem;
-        position: relative;
-        padding: 0px 10px 10px 10px;
-    }
-    a:hover{
-        color: #FFFFFF;
-        transition: all .3s ease-in-out;
-    }
-    a::before {
-      content: '';
-      background: rgb(9,79,194);
-        background: linear-gradient(160deg, rgba(9,79,194,1) 0%, rgba(0,56,149,1) 66%);
-      color: #007fea;
-      border-radius: 12px;
-      padding: 1px;
-      position: absolute;
-      left: 0;
-      bottom: 0px;
-      width: 104%;
-      height: 1px;
-      z-index: -1;
-      transition: all .3s ease-in-out;
-    }
-    
-    a:hover::before {
-      bottom: 0;
-      color: #007fea;
-      height: 100%;
+    @font-face {
+        font-family: 'Inter', sans-serif;
+        ;
+        src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap');
     }
 
-    .firstPage{ /* 🟥 */
-        margin: auto;
-        width: 900px;
-        height: 100vh;
-        margin-top: 110px;
-        margin-bottom: 50px;
-        text-align: center;
-        border: var(--key-gradient2) solid 1px;
-        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
-        border-radius: 16px;
-    }
-    .controller{
-        position: relative;
-        height: 550px;
-        background-image: url(/Intro-Dualsense/IMG//dualsense.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .contentText{
-        font-size: 1.6rem;
-        text-align: justify;
-        margin: 0px 140px 0px 140px;
-        width: 80%;
-        margin: auto;
-        line-height: 40px;
-    }
-    .secondPage{  /* 🟥 🟥 */
-        margin: auto;
-        text-align: center;
-        width: 900px;
-        height: 65vh;
-        border: var(--key-gradient2) solid 1px;
-        box-shadow: 0 8px 32px 0 #8989892f;
-        border-radius: 16px;
-    }
-    .contentTextSecondPage{ 
-        font-size: 1.5rem;
-        text-align: justify;
-        margin: 0px 20px 0px 20px;
-        color: var(--text-base);
-        width: 80%;
-        margin: auto;
-    }
-    #astroSexy{ /* 🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖 */
-        width: 100%;
-        height: 210px;
-        background-image: url(/Intro-Dualsense/IMG/sexyastro.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 500px;
-        margin-bottom: -70px;
-        margin-left: -25px;
-        position: relative;
-    }
-    .thirdPage{/* 🟥 🟥 🟥 */
-        display: flex;
-        flex-direction: column;
-        width: 900px;
-        height: 100vh;
-        color: var(--text-base);
-        margin: auto;
-        margin-top: 50px;
-        border: var(--key-gradient2) solid 1px;
-        box-shadow: 0 8px 32px 0 #8989892f;
-        border-radius: 16px;
-    }
-    .dataContainer{
-        display: flex;
-        margin: 30px;
-    }
-    .bigTittle{
-        font-size: 4.6rem; 
-        display: flex;
-        margin: 30px 0px 0px 0px;
-        font-weight: 900;
-        width: 100%;
-        justify-content: center;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .mediumTittle{
-        font-size: 4rem;
-        display: flex;
-        text-align: left;
-        margin: 0%;
-        justify-content: center;
-        margin-top: -20px;
-        font-weight: normal;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .dataGroup{
-        width: 60%;
-        font-size: 1.1rem;
-    }
-    .dataSingle{
-        padding: 0%;
-    }
-    .lineBlue6x{
-        height: 6.8px;
-        border-radius: 10px;
-        width: 100%;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-    }
-    .lineBlue{
-        height: 6.8px;
-        border-radius: 10px;
-        width: 100%;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-    }
-    .xNumbers{
-        margin: 0%;
-        padding: 0%;
-        padding-left: 1%;
-        display: flex;
-        flex-direction: column;
-        font-weight: 900;
-    }
-    .xNumbers2{
-        margin: 0%;
-        padding-top: 40px;
-    }
-    .evenMoreOrLess{
-        display: flex;
-        flex-direction: column;
-        font-size: 1.1rem;
-        padding: 0;
-        margin: 0%;
-        padding-left: 5px;
-    }
-    #evenMore{
-        margin-top: 50px;
-    }
-    #evenLess{
-        margin-top: 25px;
-    }
-    .xBlue6x{
-        font-size: 2rem;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0%;
-    }
-    .xBlue{
-        font-size: 2rem;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0;
-        margin-top: -15px;
-    }
-    /* bird float */
-    .bird{
-        height: 400px;
-        width: 100%;
-        margin-top: -70px;
-        background-image: url(/Intro-Dualsense/IMG/birdblue.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1900px;
-        border-radius: 12px;
-    }
-    .fourthPage{ /* 🟥 🟥 🟥 🟥 */
-        margin: auto;
-        text-align: center;
-        width: 900px;
-        height: 96vh;
-        color: var(--text-base);
-        display: flex;
-        flex-direction: column;
-        padding: 0%;
-        border: var(--key-gradient2) solid 1px;
-        margin-top: 50px;
-        border: var(--key-gradient2) solid 1px;
-        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
-        border-radius: 16px;
-        margin-bottom: 50px;
-    }
-    .blueTittle{
-        display: flex;
-        font-size: 3rem;
-        width: 100%;
-        margin: 0px;
-        padding-bottom: 2%;
-        text-align: start;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .newContentFour{
-        padding: 20px;
-    }
-    .fourthPage h1{
-        padding: 0%;
-        margin: 0px;
-    }
-    .fourthPage P{
-        padding: 1%;
-        margin: 0%;
-        text-align: start;
-    }
-    .blockOne, .blockTwo{
-        display: flex;
-    }
-    .blockOne p{
-        line-height: 22px;
-    }
-    .blockTwo p{
-        line-height: 22px;
-    }
-    .blocks{
-        padding: 1.7%;
-        border-radius: 30px;
-        margin-top: 23px;
-        width: 100%;
-        background: var(--gray);
-        backdrop-filter: blur( 15px );
-        -webkit-backdrop-filter: blur( 9px );
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.098);
-        margin: 5px;
-    }
-    #haptic, #trigger, #micro, #create{
-        padding: 1.7%;
-        border-radius: 30px;
-        margin-top: 23px;
-        width: 100%;
-        background: var(--gray);
-        backdrop-filter: blur( 15px );
-        -webkit-backdrop-filter: blur( 9px );
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.098);
-        margin: 5px;
-    }
-    .fifthPage{ /* 🟥 🟥 🟥 🟥 🟥 */
-        color: var(--text-base);
-        margin: auto;
-        text-align: center;
-        width: 98%;
-        height: 100vh;
-        border: var(--key-gradient2) solid 1px;
-        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
-        border-radius: 16px;
-    }
-    .blackTittle{
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--superblack) 0%, var(--black) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 4.5rem;
-        margin: 0%;
-        text-align: start;
-        text-align: center;
-        padding: 20px;
-    }
-    .greatGamesGroup{
-        margin: 0px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    .gamesBlocks{
-        width: 20%;
-        height: 80vh;
-        margin: 10px;
-        border-radius: 12px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 1rem;
-        box-shadow: #454545 10px;
-        transition: .8s ease;
-    }
-    #dawn{
-        background-image: url(/Intro-Dualsense/IMG/greatgames/dawn.jpg);
-    }
-    #ghost{
-        background-image: url(/Intro-Dualsense/IMG/greatgames/ghost.png);
-    }
-    #spider{
-        background-image: url(/Intro-Dualsense/IMG/greatgames/spider.png);
-    }
-    #ellie{
-        background-image: url(/Intro-Dualsense/IMG/greatgames/ellie.jpg);
-    }
-    #death{
-        background-image: url(/Intro-Dualsense/IMG/greatgames/deathblue.png);
-    }
-    .gamesBlocks:hover:nth-child(1){
-        opacity: 1;
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    .gamesBlocks:hover:nth-child(2){
-        opacity: 1;
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    .gamesBlocks:hover:nth-child(3){
-        opacity: 1;
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    .gamesBlocks:hover:nth-child(4){
-        opacity: 1;
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    .gamesBlocks:hover:nth-child(5){
-        opacity: 1;
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    .sixthPage{ /* 🟥 🟥 🟥 🟥 🟥 🟥 */
-        color: var(--text-base);
-        margin: auto;
-        text-align: center;
-        width: 800px;
-        height: 90vh;
-        color: var(--text-base);
-        border: var(--key-gradient2) solid 1px;
-        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
-        border-radius: 16px;
-        margin-top: 50px;
-        padding: 20px;
-    }
-    .sixthPage h1{
-        text-align: start;
-        font-size: 4rem;
-        margin: 0%;
-        padding: 0%;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .sixthPage P{
-        text-align: start;
-        font-size: 1.1rem;
-        width: 65%;
-        margin: 5px;
-        padding: 0;
-        color: var(--text-base);
-    }
-    #samllBlue{
-        font-weight: 900;
-        background: var(--blue-gradient1);
-        background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .formsBlur{
-        display: flex;
-        position: absolute;
-        margin-left: 20px;
-        flex-direction: column;
-        height: 265px;
-        width: 250px;
-        background: #dce3e988;
-        backdrop-filter: blur( 10px );
-        -webkit-backdrop-filter: blur( 4.5px );
-        border-radius: 10px;
-        padding: 1% 1% 2% 1%;
-        color: var(--text-base);
-        font-weight: bold;
-        margin-top: 50px;
-    }
-    .formsBlur input{
-        border-radius: 12px;
-        padding: 16px;
-        border: none;
-        margin: 3%;
-        background-color: var(--white);
-        color: var(--text-base);
-        font-weight: bold;
-    }
-    .formsAndPic{
-        display: flex;
-    }
-    .preOrders{
-        height: 650px;
-        width: 100%;
-        background-image: url(/Intro-Dualsense/IMG/astroVR.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 600px;
-        margin-top: -100px;
-    }
-     footer{ /*👣👣👣👣👣👣 */
-        width: 98%;
-        height: 200px;
-        margin: auto;
-        color: var(--superwhite);
-        margin-top: 80px;
-        margin-bottom: 10px;
-        border-radius: 16px;
-        background: rgb(9,79,194);
-        background: linear-gradient(160deg, rgba(9,79,194,1) 0%, rgba(0,56,149,1) 66%);
-    }
-    .supportGroup{
-        display: flex;
-        justify-content: space-around;
-        justify-content: start;
-    }
-    .footerOne{
-        margin: 10px;
-        padding-left: 40px;
-        padding-top: 30px;
-    }
-    .footerOne img{
-        height: 70px;
-    }
-    .footerTwo{
-        margin: 10px;
-    }
-    .footerThree{
-        margin: 10px;
-    }
-    .footerFour{
-        margin: 10px;
-    }
-    ul{
-        list-style: none;
-        margin: 10px;
-    }
-    li{
-        display: flex;
-        list-style: none;
-        line-height: 23px;
+    @font-face {
+        font-family: SFMono-Regular;
+        src: local("SFMono-Regular");
     }
 
-    /* ✨🚨✨🚨✨🚨✨🚨 Button ✨🚨✨🚨✨🚨✨🚨 */
-    .button{
-        background: linear-gradient(to bottom right, var(--blue-gradient1), var(--blue-gradient2));
-        border: 0;
-        border-radius: 12px;
-        color: #FFFFFF;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 16px;
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 100;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 200;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 300;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
         font-weight: 500;
-        line-height: 2.5;
-        outline: transparent;
-        padding: 0 1rem;
-        text-align: center;
-        text-decoration: none;
-        transition: box-shadow .2s ease-in-out;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff') format('woff');
     }
-    .button:not([disabled]):focus {
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 600;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 800;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 900;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff') format('woff');
+    }
+}
+
+:root {
+    --background: #F7F8F9;
+    --text-base: #212529;
+    --text-base-blur: #eebfff32;
+    --blue-gradient1: #003895;
+    --blue-gradient2: #007fea;
+    --key-gradient2: #344a5a00;
+    --gray: #DCE3E9;
+    --white: #F7F8F9;
+    --black: #454545;
+    --superwhite: #FFFFFF;
+    --superblack: #212529;
+    --whitecard: #e7e7e7;
+    --shadow: #8989892f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'SF Pro Display Regular', sans-serif, SF Pro Display Regular, Helvetica, 'Open Sans', sans-serif, Verdana, Arial, Helvetica, sans-serif, Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0px 20px 0 #50505013;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 16px;
+    border: 1px solid rgba(102, 102, 102, 0.085);
+    width: 70%;
+    margin-top: 5px;
+
+}
+
+.logos {
+    height: 30px;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0px 10px 10px 10px;
+}
+
+a:hover {
+    color: #FFFFFF;
+    transition: all .3s ease-in-out;
+}
+
+a::before {
+    content: '';
+    background: rgb(9, 79, 194);
+    background: linear-gradient(160deg, rgba(9, 79, 194, 1) 0%, rgba(0, 56, 149, 1) 66%);
+    color: #007fea;
+    border-radius: 12px;
+    padding: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 104%;
+    height: 1px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+a:hover::before {
+    bottom: 0;
+    color: #007fea;
+    height: 100%;
+}
+
+.firstPage {
+    /* 🟥 */
+    margin: auto;
+    width: 900px;
+    height: 100vh;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: var(--key-gradient2) solid 1px;
+    box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+    border-radius: 16px;
+}
+
+.controller {
+    position: relative;
+    height: 550px;
+    background-image: url(/Intro-Dualsense/IMG//dualsense.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contentText {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 0px 140px 0px 140px;
+    width: 80%;
+    margin: auto;
+    line-height: 40px;
+}
+
+.secondPage {
+    /* 🟥 🟥 */
+    margin: auto;
+    text-align: center;
+    width: 900px;
+    height: 65vh;
+    border: var(--key-gradient2) solid 1px;
+    box-shadow: 0 8px 32px 0 #8989892f;
+    border-radius: 16px;
+}
+
+.contentTextSecondPage {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0px 20px 0px 20px;
+    color: var(--text-base);
+    width: 80%;
+    margin: auto;
+}
+
+#astroSexy {
+    /* 🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖 */
+    width: 100%;
+    height: 210px;
+    background-image: url(/Intro-Dualsense/IMG/sexyastro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+    margin-bottom: -70px;
+    margin-left: -25px;
+    position: relative;
+}
+
+.thirdPage {
+    /* 🟥 🟥 🟥 */
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 100vh;
+    color: var(--text-base);
+    margin: auto;
+    margin-top: 50px;
+    border: var(--key-gradient2) solid 1px;
+    box-shadow: 0 8px 32px 0 #8989892f;
+    border-radius: 16px;
+}
+
+.dataContainer {
+    display: flex;
+    margin: 30px;
+}
+
+.bigTittle {
+    font-size: 4.6rem;
+    display: flex;
+    margin: 30px 0px 0px 0px;
+    font-weight: 900;
+    width: 100%;
+    justify-content: center;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mediumTittle {
+    font-size: 4rem;
+    display: flex;
+    text-align: left;
+    margin: 0%;
+    justify-content: center;
+    margin-top: -20px;
+    font-weight: normal;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dataGroup {
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+.dataSingle {
+    padding: 0%;
+}
+
+.lineBlue6x {
+    height: 6.8px;
+    border-radius: 10px;
+    width: 100%;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+}
+
+.lineBlue {
+    height: 6.8px;
+    border-radius: 10px;
+    width: 100%;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+}
+
+.xNumbers {
+    margin: 0%;
+    padding: 0%;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+}
+
+.xNumbers2 {
+    margin: 0%;
+    padding-top: 40px;
+}
+
+.evenMoreOrLess {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0%;
+    padding-left: 5px;
+}
+
+#evenMore {
+    margin-top: 50px;
+}
+
+#evenLess {
+    margin-top: 25px;
+}
+
+.xBlue6x {
+    font-size: 2rem;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0%;
+}
+
+.xBlue {
+    font-size: 2rem;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    margin-top: -15px;
+}
+
+/* bird float */
+.bird {
+    height: 400px;
+    width: 100%;
+    margin-top: -70px;
+    background-image: url(/Intro-Dualsense/IMG/birdblue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1900px;
+    border-radius: 12px;
+}
+
+.fourthPage {
+    /* 🟥 🟥 🟥 🟥 */
+    margin: auto;
+    text-align: center;
+    width: 900px;
+    height: 96vh;
+    color: var(--text-base);
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    border: var(--key-gradient2) solid 1px;
+    margin-top: 50px;
+    border: var(--key-gradient2) solid 1px;
+    box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+    border-radius: 16px;
+    margin-bottom: 50px;
+}
+
+.blueTittle {
+    display: flex;
+    font-size: 3rem;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 2%;
+    text-align: start;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newContentFour {
+    padding: 20px;
+}
+
+.fourthPage h1 {
+    padding: 0%;
+    margin: 0px;
+}
+
+.fourthPage P {
+    padding: 1%;
+    margin: 0%;
+    text-align: start;
+}
+
+.blockOne,
+.blockTwo {
+    display: flex;
+}
+
+.blockOne p {
+    line-height: 22px;
+}
+
+.blockTwo p {
+    line-height: 22px;
+}
+
+.blocks {
+    padding: 1.7%;
+    border-radius: 30px;
+    margin-top: 23px;
+    width: 100%;
+    background: var(--gray);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.098);
+    margin: 5px;
+}
+
+#haptic,
+#trigger,
+#micro,
+#create {
+    padding: 1.7%;
+    border-radius: 30px;
+    margin-top: 23px;
+    width: 100%;
+    background: var(--gray);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.098);
+    margin: 5px;
+}
+
+.fifthPage {
+    /* 🟥 🟥 🟥 🟥 🟥 */
+    color: var(--text-base);
+    margin: auto;
+    text-align: center;
+    width: 98%;
+    height: 100vh;
+    border: var(--key-gradient2) solid 1px;
+    box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+    border-radius: 16px;
+}
+
+.blackTittle {
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--superblack) 0%, var(--black) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5rem;
+    margin: 0%;
+    text-align: start;
+    text-align: center;
+    padding: 20px;
+}
+
+.greatGamesGroup {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.gamesBlocks {
+    width: 20%;
+    height: 80vh;
+    margin: 10px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: #454545 10px;
+    transition: .8s ease;
+}
+
+#dawn {
+    background-image: url(/Intro-Dualsense/IMG/greatgames/dawn.jpg);
+}
+
+#ghost {
+    background-image: url(/Intro-Dualsense/IMG/greatgames/ghost.png);
+}
+
+#spider {
+    background-image: url(/Intro-Dualsense/IMG/greatgames/spider.png);
+}
+
+#ellie {
+    background-image: url(/Intro-Dualsense/IMG/greatgames/ellie.jpg);
+}
+
+#death {
+    background-image: url(/Intro-Dualsense/IMG/greatgames/deathblue.png);
+}
+
+.gamesBlocks:hover:nth-child(1) {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.gamesBlocks:hover:nth-child(2) {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.gamesBlocks:hover:nth-child(3) {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.gamesBlocks:hover:nth-child(4) {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.gamesBlocks:hover:nth-child(5) {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.sixthPage {
+    /* 🟥 🟥 🟥 🟥 🟥 🟥 */
+    color: var(--text-base);
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 90vh;
+    color: var(--text-base);
+    border: var(--key-gradient2) solid 1px;
+    box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+    border-radius: 16px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.sixthPage h1 {
+    text-align: start;
+    font-size: 4rem;
+    margin: 0%;
+    padding: 0%;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sixthPage P {
+    text-align: start;
+    font-size: 1.1rem;
+    width: 65%;
+    margin: 5px;
+    padding: 0;
+    color: var(--text-base);
+}
+
+#samllBlue {
+    font-weight: 900;
+    background: var(--blue-gradient1);
+    background: linear-gradient(to right, var(--blue-gradient1) 0%, var(--blue-gradient2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.formsBlur {
+    display: flex;
+    position: absolute;
+    margin-left: 20px;
+    flex-direction: column;
+    height: 265px;
+    width: 250px;
+    background: #dce3e988;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    padding: 1% 1% 2% 1%;
+    color: var(--text-base);
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.formsBlur input {
+    border-radius: 12px;
+    padding: 16px;
+    border: none;
+    margin: 3%;
+    background-color: var(--white);
+    color: var(--text-base);
+    font-weight: bold;
+}
+
+.formsAndPic {
+    display: flex;
+}
+
+.preOrders {
+    height: 650px;
+    width: 100%;
+    background-image: url(/Intro-Dualsense/IMG/astroVR.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+    margin-top: -100px;
+}
+
+footer {
+    /*👣👣👣👣👣👣 */
+    width: 98%;
+    height: 200px;
+    margin: auto;
+    color: var(--superwhite);
+    margin-top: 80px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    background: rgb(9, 79, 194);
+    background: linear-gradient(160deg, rgba(9, 79, 194, 1) 0%, rgba(0, 56, 149, 1) 66%);
+}
+
+.supportGroup {
+    display: flex;
+    justify-content: space-around;
+    justify-content: start;
+}
+
+.footerOne {
+    margin: 10px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.footerOne img {
+    height: 70px;
+}
+
+.footerTwo {
+    margin: 10px;
+}
+
+.footerThree {
+    margin: 10px;
+}
+
+.footerFour {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    line-height: 23px;
+}
+
+/* ✨🚨✨🚨✨🚨✨🚨 Button ✨🚨✨🚨✨🚨✨🚨 */
+.button {
+    background: linear-gradient(to bottom right, var(--blue-gradient1), var(--blue-gradient2));
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.button:not([disabled]):focus {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem var(--blue-gradient1), .125rem .125rem 1rem var(--blue-gradient2);
-    }
-    .button:not([disabled]):hover {
+}
+
+.button:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem var(--blue-gradient1), .125rem .125rem 1rem var(--blue-gradient2);
-    }
-    /*✨✨✨✨✨✨✨✨✨ animation ✨✨✨✨✨✨✨✨✨ */
-  .appear {
+}
+
+/*✨✨✨✨✨✨✨✨✨ animation ✨✨✨✨✨✨✨✨✨ */
+.appear {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     opacity: 0;
     -webkit-transform: translateY(40px);
-            transform: translateY(40px);
-  }
-  
-  .appear.inview {
+    transform: translateY(40px);
+}
+
+.appear.inview {
     opacity: 1;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  
-  .appear2 {
+    transition-delay: 0.3s;
+}
+
+.appear2 {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     opacity: 0;
     -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  
-  .appear2.inview2 {
+    transform: translateY(20px);
+}
+
+.appear2.inview2 {
     opacity: 1;
     -webkit-transform: none;
-            transform: none;
-  }
-  
-  .appear2.inview2:nth-child(1) {
+    transform: none;
+}
+
+.appear2.inview2:nth-child(1) {
     -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-  }
-  
-  .appear2.inview2:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.appear2.inview2:nth-child(2) {
     -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-  }
-  
-  .appear2.inview2:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.appear2.inview2:nth-child(3) {
     -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  
-  .appear2.inview2:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.appear2.inview2:nth-child(4) {
     -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
-  }
-  
-  .appear2.inview2:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.appear2.inview2:nth-child(5) {
     -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
-  }
-  
-  .appear3 {
+    transition-delay: 0.5s;
+}
+
+.appear3 {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     opacity: 0;
     -webkit-transform: translateY(40px);
-            transform: translateY(40px);
-  }
-  
-  .appear3.inview {
+    transform: translateY(40px);
+}
+
+.appear3.inview {
     opacity: 1;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  /* ------------Responsive rules -----------------------*/
-  @media only screen and (max-width: 900px){ 
-    #astroSexy{ /* 🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖 */
+    transition-delay: 0.3s;
+}
+
+/* ------------Responsive rules -----------------------*/
+@media only screen and (max-width: 900px) {
+    #astroSexy {
+        /* 🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖 */
         width: 100%;
         height: 210px;
         background-image: url(/Intro-Dualsense/IMG/sexyastro.png);
@@ -707,7 +804,8 @@
         position: relative;
         top: -15px;
     }
-    .blueTittle{
+
+    .blueTittle {
         display: flex;
         font-size: clamp(2rem, 2.5vw, 4rem);
         width: 100%;
@@ -719,7 +817,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .blackTittle{
+
+    .blackTittle {
         background: var(--blue-gradient1);
         background: linear-gradient(to right, var(--superblack) 0%, var(--black) 100%);
         -webkit-background-clip: text;
@@ -730,7 +829,8 @@
         text-align: center;
         padding: 20px;
     }
-    .sixthPage h1{
+
+    .sixthPage h1 {
         text-align: start;
         font-size: clamp(3.5rem, 2.5vw, 4rem);
         margin: 0%;
@@ -740,7 +840,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .mediumTittle{
+
+    .mediumTittle {
         font-size: clamp(2.5rem, 2.5vw, 4rem);
         padding: 30px;
         display: flex;
@@ -753,7 +854,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .bird{
+
+    .bird {
         height: 300px;
         width: 100%;
         margin-top: -70px;
@@ -763,7 +865,8 @@
         background-size: 1900px;
         border-radius: 12px;
     }
-    .preOrders{
+
+    .preOrders {
         height: 550px;
         width: 100%;
         background-image: url(/Intro-Dualsense/IMG/astroVR.png);
@@ -772,7 +875,8 @@
         background-size: 450px;
         margin-top: -00px;
     }
-    .controller{
+
+    .controller {
         position: relative;
         height: 450px;
         background-image: url(/Intro-Dualsense/IMG//dualsense.webp);
@@ -780,11 +884,13 @@
         background-position: center;
         background-size: cover;
     }
-    .logos{
+
+    .logos {
         display: none;
     }
-    .bigTittle{
-        font-size: clamp(3rem, 2.5vw, 5rem); 
+
+    .bigTittle {
+        font-size: clamp(3rem, 2.5vw, 5rem);
         display: flex;
         margin: 30px 0px 0px 0px;
         font-weight: 900;
@@ -795,7 +901,9 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .firstPage{ /* 🟩 */
+
+    .firstPage {
+        /* 🟩 */
         margin: auto;
         width: 95%;
         height: 100vh;
@@ -806,7 +914,9 @@
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
     }
-    .secondPage{  /* 🟩 🟩 */
+
+    .secondPage {
+        /* 🟩 🟩 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -815,7 +925,9 @@
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
     }
-    .thirdPage{/* 🟩 🟩 🟩 */
+
+    .thirdPage {
+        /* 🟩 🟩 🟩 */
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -827,7 +939,9 @@
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
     }
-    .fourthPage{ /*  🟩 🟩 🟩 🟩 */
+
+    .fourthPage {
+        /*  🟩 🟩 🟩 🟩 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -843,7 +957,9 @@
         border-radius: 16px;
         margin-bottom: 50px;
     }
-    .fifthPage{ /*  🟩 🟩 🟩 🟩 🟩 */
+
+    .fifthPage {
+        /*  🟩 🟩 🟩 🟩 🟩 */
         color: var(--text-base);
         margin: auto;
         text-align: center;
@@ -853,7 +969,9 @@
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
     }
-    .sixthPage{ /*  🟩 🟩 🟩 🟩 🟩 🟩 */
+
+    .sixthPage {
+        /*  🟩 🟩 🟩 🟩 🟩 🟩 */
         color: var(--text-base);
         margin: auto;
         text-align: center;
@@ -866,7 +984,9 @@
         margin-top: 50px;
         padding: 20px;
     }
-    footer{ /* 👣👣👣👣👣👣 */
+
+    footer {
+        /* 👣👣👣👣👣👣 */
         width: 98%;
         height: 390px;
         margin: auto;
@@ -874,30 +994,35 @@
         margin-top: 80px;
         margin-bottom: 10px;
         border-radius: 16px;
-        background: rgb(9,79,194);
-        background: linear-gradient(160deg, rgba(9,79,194,1) 0%, rgba(0,56,149,1) 66%);
+        background: rgb(9, 79, 194);
+        background: linear-gradient(160deg, rgba(9, 79, 194, 1) 0%, rgba(0, 56, 149, 1) 66%);
     }
-    .supportGroup{
+
+    .supportGroup {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 200px;
     }
 }
-  /* ------------Responsive rules MOBILE 📱📱📱📱📱📱📱*/
-  @media only screen and (max-width: 400px){
-    body{
+
+/* ------------Responsive rules MOBILE 📱📱📱📱📱📱📱*/
+@media only screen and (max-width: 400px) {
+    body {
         margin: 0%;
         width: 100vw;
         overflow-x: hidden;
         background-color: var(--background);
         font-family: 'Inter', sans-serif;
         font-family: 'Open Sans', sans-serif;
-        font-family: 'SF Pro Display Regular', sans-serif, SF Pro Display Regular, Helvetica,'Open Sans', sans-serif, Verdana, Arial, Helvetica, sans-serif, Arial, sans-serif;
+        font-family: 'SF Pro Display Regular', sans-serif, SF Pro Display Regular, Helvetica, 'Open Sans', sans-serif, Verdana, Arial, Helvetica, sans-serif, Arial, sans-serif;
     }
-    header{
+
+    header {
         display: none;
     }
-    .firstPage{ /* 🟢 */
+
+    .firstPage {
+        /* 🟢 */
         margin: auto;
         width: 95%;
         height: 120vh;
@@ -908,7 +1033,8 @@
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
     }
-    .contentText{
+
+    .contentText {
         font-size: clamp(1.2rem, 2.5vw, 1rem);
         text-align: center;
         margin: 0px 140px 0px 140px;
@@ -916,7 +1042,9 @@
         margin: auto;
         line-height: 32px;
     }
-    .secondPage{  /* 🟢 🟢 */
+
+    .secondPage {
+        /* 🟢 🟢 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -925,16 +1053,21 @@
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
     }
-    #tittleDifference{
+
+    #tittleDifference {
         font-size: 2rem;
     }
-    #dataMobile{
+
+    #dataMobile {
         font-size: 1rem;
     }
-    #evenMore, #evenLess{
+
+    #evenMore,
+    #evenLess {
         display: none;
     }
-    .contentTextSecondPage{ 
+
+    .contentTextSecondPage {
         font-size: clamp(1.2rem, 2.5vw, 1.3rem);
         text-align: justify;
         margin: 0px 20px 0px 20px;
@@ -942,7 +1075,9 @@
         width: 80%;
         margin: auto;
     }
-    .thirdPage{/* 🟢 🟢 🟢 */
+
+    .thirdPage {
+        /* 🟢 🟢 🟢 */
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -955,8 +1090,9 @@
         border-radius: 16px;
         display: none;
     }
-    
-    .fourthPage{ /* 🟢 🟢 🟢 🟢 */
+
+    .fourthPage {
+        /* 🟢 🟢 🟢 🟢 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -972,10 +1108,12 @@
         border-radius: 16px;
         margin-bottom: 50px;
     }
-    .fourthPage h1{
+
+    .fourthPage h1 {
         font-size: clamp(2rem, 2.5vw, 5rem);
     }
-    .blueTittle{
+
+    .blueTittle {
         display: flex;
         font-size: clamp(2rem, 2.5vw, 4rem);
         width: 100%;
@@ -987,32 +1125,72 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .newContentFour{
+
+    .newContentFour {
         padding: 20px;
     }
-    .fourthPage h1{
+
+    .fourthPage h1 {
         padding: 0%;
         margin: 0px;
     }
-    .fourthPage P{
+
+    .fourthPage P {
         padding: 1%;
         margin: 0%;
         text-align: start;
     }
-    .blockOne, .blockTwo{
+
+    .blockOne,
+    .blockTwo {
         display: flex;
         flex-direction: column;
         width: 94%;
     }
-    .blockOne p{
+
+    .blockOne p {
         line-height: 22px;
     }
-    .blockTwo p{
+
+    .blockTwo p {
         line-height: 22px;
     }
-    .gamesBlocks{
-        width: 20%;
-        height: 40vh;
+
+    #haptic,
+    #trigger,
+    #micro,
+    #create {
+        padding: 1.7%;
+        border-radius: 30px;
+        margin-top: 23px;
+        width: 100%;
+        background: var(--gray);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(9px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.098);
+        margin: 5px;
+    }
+
+    .fifthPage {
+        /* 🟢 🟢 🟢 🟢 🟢 */
+        color: var(--text-base);
+        margin: auto;
+        text-align: center;
+        width: 95%;
+        height: 170vh;
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+        border-radius: 16px;
+    }
+
+    .blackTittle {
+        font-size: clamp(2rem, 2.5vw, 4rem);
+    }
+
+    .gamesBlocks {
+        width: 95%;
+        height: 10vh;
         margin: 10px;
         border-radius: 12px;
         background-repeat: no-repeat;
@@ -1022,127 +1200,131 @@
         box-shadow: #454545 10px;
         transition: .8s ease;
     }
-    .blocks{
+
+    .blocks {
         padding: 1.7%;
         border-radius: 30px;
         margin-top: 23px;
         width: 100%;
         background: var(--gray);
-        backdrop-filter: blur( 15px );
-        -webkit-backdrop-filter: blur( 9px );
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(9px);
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.098);
         margin: 5px;
     }
-    .gamesBlocks:hover:nth-child(1){
+
+    .greatGamesGroup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .gamesBlocks:hover:nth-child(1) {
+        opacity: 1;
+        width: 95%;
+        display: block;
+        height: 90vh;
+    } */
+
+    .gamesBlocks:hover:nth-child(1) {
+        opacity: 1;
+        width: 95%;
+        display: block;
+        height: 40vh;
+    }
+
+    .gamesBlocks:hover:nth-child(2) {
         opacity: 1;
         width: 500%;
         display: block;
         height: auto;
     }
-    .gamesBlocks:hover:nth-child(2){
+
+    .gamesBlocks:hover:nth-child(3) {
         opacity: 1;
         width: 500%;
         display: block;
         height: auto;
     }
-    .gamesBlocks:hover:nth-child(3){
+
+    .gamesBlocks:hover:nth-child(4) {
         opacity: 1;
         width: 500%;
         display: block;
         height: auto;
     }
-    .gamesBlocks:hover:nth-child(4){
+
+    .gamesBlocks:hover:nth-child(5) {
         opacity: 1;
         width: 500%;
         display: block;
         height: auto;
     }
-    .gamesBlocks:hover:nth-child(5){
-        opacity: 1;
-        width: 500%;
-        display: block;
-        height: auto;
+
+    .sixthPage {
+        /* 🟢 🟢 🟢 🟢 🟢 🟢 */
+        color: var(--text-base);
+        margin: auto;
+        text-align: center;
+        width: 85%;
+        height: 120vh;
+        color: var(--text-base);
+        border: var(--key-gradient2) solid 1px;
+        box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
+        border-radius: 16px;
+        margin-top: 50px;
+        padding: 20px;
     }
-        #haptic, #trigger, #micro, #create{
-            padding: 1.7%;
-            border-radius: 30px;
-            margin-top: 23px;
-            width: 100%;
-            background: var(--gray);
-            backdrop-filter: blur( 15px );
-            -webkit-backdrop-filter: blur( 9px );
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.098);
-            margin: 5px;
-        }
-        .fifthPage{ /* 🟢 🟢 🟢 🟢 🟢 */
-            color: var(--text-base);
-            margin: auto;
-            text-align: center;
-            width: 95%;
-            height: 70vh;
-            border: var(--key-gradient2) solid 1px;
-            box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
-            border-radius: 16px;
-        }
-        .blackTittle{
-            font-size: clamp(2rem, 2.5vw, 4rem);
-        }
-        .sixthPage{ /* 🟢 🟢 🟢 🟢 🟢 🟢 */
-            color: var(--text-base);
-            margin: auto;
-            text-align: center;
-            width: 85%;
-            height: 120vh;
-            color: var(--text-base);
-            border: var(--key-gradient2) solid 1px;
-            box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
-            border-radius: 16px;
-            margin-top: 50px;
-            padding: 20px;
-        }
-        .sixthPage h1{
-            font-size: clamp(2rem, 2.5vw, 3rem);
-        }
-        .preOrders{
-            height: 650px;
-            width: 100%;
-            background-image: url(/Intro-Dualsense/IMG/astroVR.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 300px;
-            margin-top: 150px;
-        }
-        footer{ /*👣👣👣👣👣👣 */
-            width: 98%;
-            height: 120vh;
-            margin: auto;
-            color: var(--superwhite);
-            margin-bottom: 20px;
-            border-radius: 16px;
-            background: rgb(9,79,194);
-            background: linear-gradient(160deg, rgba(9,79,194,1) 0%, rgba(0,56,149,1) 66%);
-            margin: auto;
-            justify-content: center;
-            text-align: center;    
-        }
-        footer img{
-            padding-top: 10%;
-        }
-        .supportGroup{
-            display: flex;
-            flex-direction: column-reverse;
-            margin: auto;
-            justify-content: center;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .footerOne{
-            padding-left: 0px;
-            padding-top: 00px;
-        }
-        .footerFour{
-            margin-top: 40px;
-        }
+
+    .sixthPage h1 {
+        font-size: clamp(2rem, 2.5vw, 3rem);
+    }
+
+    .preOrders {
+        height: 650px;
+        width: 100%;
+        background-image: url(/Intro-Dualsense/IMG/astroVR.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 300px;
+        margin-top: 150px;
+    }
+
+    footer {
+        /*👣👣👣👣👣👣 */
+        width: 98%;
+        height: 120vh;
+        margin: auto;
+        color: var(--superwhite);
+        margin-bottom: 20px;
+        border-radius: 16px;
+        background: rgb(9, 79, 194);
+        background: linear-gradient(160deg, rgba(9, 79, 194, 1) 0%, rgba(0, 56, 149, 1) 66%);
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer img {
+        padding-top: 10%;
+    }
+
+    .supportGroup {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .footerOne {
+        padding-left: 0px;
+        padding-top: 00px;
+    }
+
+    .footerFour {
+        margin-top: 40px;
+    }
 }
