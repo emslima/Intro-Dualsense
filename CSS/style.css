@@ -1178,7 +1178,7 @@ li {
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 170vh;
+        height: 190vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
@@ -1186,11 +1186,12 @@ li {
 
     .blackTittle {
         font-size: clamp(2rem, 2.5vw, 4rem);
+        margin-bottom: -30px;
     }
 
     .gamesBlocks {
         width: 95%;
-        height: 10vh;
+        height: 40vh;
         margin: 10px;
         border-radius: 12px;
         background-repeat: no-repeat;
@@ -1217,48 +1218,6 @@ li {
     .greatGamesGroup{
         display: flex;
         flex-direction: column;
-    }
-
-    /* .gamesBlocks:hover:nth-child(1) {
-        opacity: 1;
-        width: 95%;
-        display: block;
-        height: 90vh;
-    } */
-
-    .gamesBlocks:hover:nth-child(1) {
-        opacity: 1;
-        width: 95%;
-        display: block;
-        height: 40vh;
-    }
-
-    .gamesBlocks:hover:nth-child(2) {
-        opacity: 1;
-        width: 500%;
-        display: block;
-        height: auto;
-    }
-
-    .gamesBlocks:hover:nth-child(3) {
-        opacity: 1;
-        width: 500%;
-        display: block;
-        height: auto;
-    }
-
-    .gamesBlocks:hover:nth-child(4) {
-        opacity: 1;
-        width: 500%;
-        display: block;
-        height: auto;
-    }
-
-    .gamesBlocks:hover:nth-child(5) {
-        opacity: 1;
-        width: 500%;
-        display: block;
-        height: auto;
     }
 
     .sixthPage {
