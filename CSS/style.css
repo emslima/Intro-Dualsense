@@ -795,7 +795,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .firstPage{ /* 🟥 */
+    .firstPage{ /* 🟩 */
         margin: auto;
         width: 95%;
         height: 100vh;
@@ -806,7 +806,7 @@
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
     }
-    .secondPage{  /* 🟥 🟥 */
+    .secondPage{  /* 🟩 🟩 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -815,7 +815,7 @@
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
     }
-    .thirdPage{/* 🟥 🟥 🟥 */
+    .thirdPage{/* 🟩 🟩 🟩 */
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -827,7 +827,7 @@
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
     }
-    .fourthPage{ /* 🟥 🟥 🟥 🟥 */
+    .fourthPage{ /*  🟩 🟩 🟩 🟩 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -843,7 +843,7 @@
         border-radius: 16px;
         margin-bottom: 50px;
     }
-    .fifthPage{ /* 🟥 🟥 🟥 🟥 🟥 */
+    .fifthPage{ /*  🟩 🟩 🟩 🟩 🟩 */
         color: var(--text-base);
         margin: auto;
         text-align: center;
@@ -853,7 +853,7 @@
         box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
         border-radius: 16px;
     }
-    .sixthPage{ /* 🟥 🟥 🟥 🟥 🟥 🟥 */
+    .sixthPage{ /*  🟩 🟩 🟩 🟩 🟩 🟩 */
         color: var(--text-base);
         margin: auto;
         text-align: center;
@@ -882,7 +882,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 200px;
     }
-  }
+}
   /* ------------Responsive rules MOBILE 📱📱📱📱📱📱📱*/
   @media only screen and (max-width: 400px){
     body{
@@ -897,7 +897,7 @@
     header{
         display: none;
     }
-    .firstPage{ /* 🟥 */
+    .firstPage{ /* 🟢 */
         margin: auto;
         width: 95%;
         height: 120vh;
@@ -916,7 +916,7 @@
         margin: auto;
         line-height: 32px;
     }
-    .secondPage{  /* 🟥 🟥 */
+    .secondPage{  /* 🟢 🟢 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -942,7 +942,7 @@
         width: 80%;
         margin: auto;
     }
-    .thirdPage{/* 🟥 🟥 🟥 */
+    .thirdPage{/* 🟢 🟢 🟢 */
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -953,9 +953,10 @@
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
+        display: none;
     }
     
-    .fourthPage{ /* 🟥 🟥 🟥 🟥 */
+    .fourthPage{ /* 🟢 🟢 🟢 🟢 */
         margin: auto;
         text-align: center;
         width: 95%;
@@ -1075,7 +1076,7 @@
             border: 1px solid rgba(255, 255, 255, 0.098);
             margin: 5px;
         }
-        .fifthPage{ /* 🟥 🟥 🟥 🟥 🟥 */
+        .fifthPage{ /* 🟢 🟢 🟢 🟢 🟢 */
             color: var(--text-base);
             margin: auto;
             text-align: center;
@@ -1088,12 +1089,12 @@
         .blackTittle{
             font-size: clamp(2rem, 2.5vw, 4rem);
         }
-        .sixthPage{ /* 🟥 🟥 🟥 🟥 🟥 🟥 */
+        .sixthPage{ /* 🟢 🟢 🟢 🟢 🟢 🟢 */
             color: var(--text-base);
             margin: auto;
             text-align: center;
             width: 85%;
-            height: 140vh;
+            height: 120vh;
             color: var(--text-base);
             border: var(--key-gradient2) solid 1px;
             box-shadow: 0 8px 32px 0 rgba(137, 137, 137, 0.185);
@@ -1115,7 +1116,7 @@
         }
         footer{ /*👣👣👣👣👣👣 */
             width: 98%;
-            height: 130vh;
+            height: 120vh;
             margin: auto;
             color: var(--superwhite);
             margin-bottom: 20px;
@@ -1124,7 +1125,11 @@
             background: linear-gradient(160deg, rgba(9,79,194,1) 0%, rgba(0,56,149,1) 66%);
             margin: auto;
             justify-content: center;
-            text-align: center;    }
+            text-align: center;    
+        }
+        footer img{
+            padding-top: 10%;
+        }
         .supportGroup{
             display: flex;
             flex-direction: column-reverse;
