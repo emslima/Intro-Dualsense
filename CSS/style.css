@@ -1048,7 +1048,7 @@ li {
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 100vh;
+        height: 90vh;
         border: var(--key-gradient2) solid 1px;
         box-shadow: 0 8px 32px 0 #8989892f;
         border-radius: 16px;
@@ -1096,7 +1096,7 @@ li {
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 160vh;
+        height: 140vh;
         color: var(--text-base);
         display: flex;
         flex-direction: column;
