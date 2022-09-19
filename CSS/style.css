@@ -1081,7 +1081,7 @@ li {
         display: flex;
         flex-direction: column;
         width: 95%;
-        height: 660px;
+        height: 670px;
         color: var(--text-base);
         margin: auto;
         margin-top: 50px;
@@ -1096,7 +1096,7 @@ li {
         margin: auto;
         text-align: center;
         width: 95%;
-        height: 140vh;
+        height: 150vh;
         color: var(--text-base);
         display: flex;
         flex-direction: column;
