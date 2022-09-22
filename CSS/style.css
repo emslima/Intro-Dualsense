@@ -1004,7 +1004,6 @@ li {
         grid-auto-rows: 200px;
     }
 }
-
 /* ------------Responsive rules MOBILE 📱📱📱📱📱📱📱*/
 @media only screen and (max-width: 400px) {
     body {
